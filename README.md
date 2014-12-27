@@ -7,7 +7,7 @@ chrome extension that updates the url of an electronic resource to be directed t
 Installation
 ------------
 
-Just clone this repository or download the source code as a zip and extract. Then, in Chrome, go to [`chrome://extensions`](chrome://extensions), make sure the "Developer mode" checkbox is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory.
+Just clone this repository or download the source code as a zip and extract. Then, in Chrome, go to [chrome://extensions](chrome://extensions), make sure the "Developer mode" checkbox is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory.
 
 The Makefile doesn't need to be run unless you want to regenerate the icons.
 
