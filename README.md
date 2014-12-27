@@ -11,7 +11,7 @@ Just clone this repository or download the source code as a zip and extract. The
 
 Now you'll have a purple library in your Chrome toolbar that you can click whenever you're viewing a paywalled article you don't have access to, which should automatically give you access.
 
-The Makefile doesn't need to be run unless you want to regenerate the icons.
+(The Makefile doesn't need to be run unless you want to regenerate the icons.)
 
 
 How it works
