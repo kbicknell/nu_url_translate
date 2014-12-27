@@ -9,7 +9,7 @@ Installation
 
 Just clone this repository or download the source code as a zip and extract. Then, go to [Chrome's extensions manager](chrome://extensions), make sure the "Developer mode" checkbox there is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory.
 
-Now you'll have a purple library in your toolbar that you can click whenever you're viewing a paywalled article you don't have access to.
+Now you'll have a purple library in your Chrome toolbar that you can click whenever you're viewing a paywalled article you don't have access to, which should automatically give you access.
 
 The Makefile doesn't need to be run unless you want to regenerate the icons.
 
