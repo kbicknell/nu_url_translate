@@ -1,8 +1,9 @@
 function getMetaContents(mn) {
     'use strict';
-    var m = document.getElementsByTagName('meta');
-    for (var i in m) {
-        if (m[i].name == mn) {
+    var m = document.getElementsByTagName('meta'),
+        i;
+    for (i = 0; i < m.length; i++) {
+        if (m[i].name === mn) {
             return m[i].content;
         }
     }
