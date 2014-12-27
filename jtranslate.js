@@ -1,6 +1,8 @@
+/*global chrome */
 function updateUrl(tab) {
+    'use strict';
+    var newurl = '';
     if (tab.title === "PsycNET - Display Record") {
-        var newurl = ''
         chrome.tabs.executeScript(null, {
                 file: "apa_script.js"
             },
@@ -12,15 +14,18 @@ function updateUrl(tab) {
                 url: newurl
             });
         }, 100);
-    } else if (tab.title === "PsycNET - DOI Landing page") {
-        var doi = tab.url.substring(tab.url.indexOf('doi=') + 4);
-        //alert(doi);
-        var newurl = "http://search.ebscohost.com.turing.library.northwestern.edu/login.aspx?direct=true&db=pdh&bquery=DI+" + doi + "&type=1&site=ehost-live";
-        //alert(url);
-        chrome.tabs.update(tab.id, {
-            url: newurl
+    } else if (tab.title === "PsycNET - Option to Buy") {
+        chrome.tabs.executeScript(null, {
+                file: "psycnet_otb.js"
+            },
+            function (result) {
+                newurl = result[0];
         });
-        //alert("hi");
+        setTimeout(function() {
+            chrome.tabs.update(tab.id, {
+                url: newurl
+            });
+        }, 100);
     } else {
         var parser = document.createElement("a");
         parser.href = tab.url;
@@ -32,5 +37,6 @@ function updateUrl(tab) {
 }
 
 chrome.browserAction.onClicked.addListener(function (tab) {
+    'use strict';
     updateUrl(tab);
 });

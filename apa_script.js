@@ -1,4 +1,5 @@
 function getMetaContents(mn) {
+    'use strict';
     var m = document.getElementsByTagName('meta');
     for (var i in m) {
         if (m[i].name == mn) {
@@ -7,6 +8,4 @@ function getMetaContents(mn) {
     }
 }
 
-var citation_doi = getMetaContents("citation_doi");
-
-citation_doi
+getMetaContents("citation_doi");

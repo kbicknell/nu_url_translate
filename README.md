@@ -3,7 +3,7 @@ nu_url_translate
 
 chrome extension that updates the url of an electronic resource to be directed through the NU proxy (e.g., so that the full text can be accessed for paywalled content)
 
-For most websites, this just changes the URL of the current tab by appending `.turing.library.northwestern.edu` to the domain, for example, changing `http://www.pnas.org/content/current` to `http://www.pnas.org.turing.library.northwestern.edu/content/current`. If the current tab is a page on PsycNET (e.g., APA journals), this strategy won't work, since Northwestern subscribes to these articles through `ebscohost.com` instead, so the extension redirects the current tab to the appropriate page at `ebscohost.com` (by matching the DOI).
+For most websites, this just changes the URL of the current tab by appending `.turing.library.northwestern.edu` to the domain, for example, changing `http://www.pnas.org/content/current` to `http://www.pnas.org.turing.library.northwestern.edu/content/current`. If the current tab is a page on PsycNET (e.g., APA journals), this strategy won't work, since Northwestern subscribes to these articles through `ebscohost.com` instead, so the extension redirects the current tab to the appropriate page at `ebscohost.com` (by matching the DOI). If the first URL is PsycNET's "Option to Buy" page, you'll need to do the redirect twice.
 
 
 Installation
