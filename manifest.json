@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "(Unofficial) NU URL translate",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Route URLs such as ejournals through Northwestern's proxy",
   "icons": { "16": "images/library_colored16.png",

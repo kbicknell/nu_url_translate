@@ -10,14 +10,14 @@ function updateUrl(tab) {
 
     if (tab.title === "PsycNET - Display Record") {
         chrome.tabs.executeScript(null, {
-                file: "psycnet_dr.js"
+                file: "psycnet_dr.js" // returns new URL appropriate for Display Record pages
             },
             function (result) {
                 doTabUpdate(result[0]);
             });
     } else if (tab.title === "PsycNET - Option to Buy") {
         chrome.tabs.executeScript(null, {
-                file: "psycnet_otb.js"
+                file: "psycnet_otb.js" // returns new URL appropriate for Option to Buy pages
             },
             function (result) {
                 doTabUpdate(result[0]);
