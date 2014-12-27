@@ -5,10 +5,10 @@ function updateUrl(tab) {
         parser;
     if (tab.title === "PsycNET - Display Record") {
         chrome.tabs.executeScript(null, {
-                file: "apa_script.js"
+                file: "psycnet_dr.js"
             },
             function (result) {
-                newurl = "http://search.ebscohost.com.turing.library.northwestern.edu/login.aspx?direct=true&db=pdh&bquery=DI+" + result[0] + "&type=1&site=ehost-live";
+                newurl = result[0];
             });
     } else if (tab.title === "PsycNET - Option to Buy") {
         chrome.tabs.executeScript(null, {

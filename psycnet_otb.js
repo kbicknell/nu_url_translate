@@ -1,3 +1,9 @@
+/**
+
+This script assumes the current page is a PsycNET "Option to Buy" page and generates the URL of its "Display record" page (from which the other scripts included here can retrieve the paper). It does this by finding the URL directly specified in a piece of javascript.
+
+*/
+
 function matchRegExpInSomeScript(reString) {
     'use strict';
     var re = new RegExp(reString),
