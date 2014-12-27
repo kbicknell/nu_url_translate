@@ -7,7 +7,9 @@ chrome extension that updates the url of an electronic resource to be directed t
 Installation
 ------------
 
-Just clone this repository or download the source code as a zip and extract. Then, in Chrome, go to [chrome://extensions](chrome://extensions), make sure the "Developer mode" checkbox is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory.
+Just clone this repository or download the source code as a zip and extract. Then, go to [Chrome's extensions manager](chrome://extensions), make sure the "Developer mode" checkbox there is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory.
+
+Now you'll have a purple library in your toolbar that you can click whenever you're viewing a paywalled article you don't have access to.
 
 The Makefile doesn't need to be run unless you want to regenerate the icons.
 
