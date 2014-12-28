@@ -7,7 +7,7 @@ chrome extension that updates the url of an electronic resource to be directed t
 Installation
 ------------
 
-Just clone this repository or download the source code as a zip and extract. You'll need to put this somewhere permanent as the extension will continue to live there as long as you're using it. Then, go to [Chrome's extensions manager](chrome://extensions), make sure the "Developer mode" checkbox there is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory (wherever you put it).
+Just clone this repository or download the source code as a zip and extract. You'll need to put the resulting `nu_url_translate` directory somewhere permanent as the extension will continue to live there as long as you're using it. Then, go to [Chrome's extensions manager](chrome://extensions), make sure the "Developer mode" checkbox there is checked, select "Load unpacked extensions", and pick the `nu_url_translate` directory (wherever you put it).
 
 Now you'll have a purple library in your Chrome toolbar that you can click whenever you're viewing a paywalled article you don't have access to, which should automatically give you access.
 
